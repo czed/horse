@@ -43,26 +43,12 @@
   background-image: linear-gradient(to right, rgba(40,50,75,1), rgba(246,81,88,1));
 }
 
-#banner>.inner .content>.icon{
-  transition: all 0.2s ease-out 0.1s;
-}
-#banner>.inner .content>.icon:hover{
-  transition: all 0.2s ease-out 0.1s;
-  font-size: -webkit-calc(100% + 10px);
-}
-
 .tiles article:last-child {
     flex: 1 auto;
 }
 
 .lity.lity-opened{
   z-index:10000!important;
-}
-
-/* Animations */
-.text-flicker-in {
-  -webkit-animation: text-flicker-in 6s ease-in both;
-          animation: text-flicker-in 6s ease-in both;
 }
 
 /* ----------------------------------------------
@@ -72,6 +58,38 @@
  * w: http://animista.net, t: @cssanimista
  * COPYRIGHT 2017 ANA TRAVAS
  * ---------------------------------------------- */
+ .scale-up-center:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.text-flicker-in {
+  -webkit-animation: text-flicker-in 6s ease-in both;
+          animation: text-flicker-in 6s ease-in both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 
 @-webkit-keyframes text-flicker-in {
   0% {
