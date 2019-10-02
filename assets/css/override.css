@@ -10,22 +10,12 @@
   }
 }
 
-/*
-@media only screen and (min-width: 768px){
-  #banner{
-    display:none;
-  }
-}
-*/
 .videobg {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
+/*position video*/
 .videobg video {
   position: absolute;
   top: 50%;
@@ -41,11 +31,6 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.videobg .container {
-  position: relative;
-  z-index: 2;
-}
-
 .vsc-controller{
   display: none;
 }
@@ -56,7 +41,6 @@
 
 #banner::after{
   background-image: linear-gradient(to right, rgba(40,50,75,1), rgba(246,81,88,1));
-  opacity:0.85!important;
 }
 
 .tiles article:last-child {
