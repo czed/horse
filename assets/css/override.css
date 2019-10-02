@@ -55,8 +55,8 @@
 /* Animations */
 
 .text-flicker-in {
-  -webkit-animation: text-flicker-in-glow 4s linear both;
-          animation: text-flicker-in-glow 4s linear both;
+  -webkit-animation: text-flicker-in 4s linear both;
+          animation: text-flicker-in 4s linear both;
 }
 
 /* ----------------------------------------------
