@@ -6,8 +6,12 @@
 
 @media only screen and (min-width: 768px){
   .tiles article:nth-child(3), .tiles article:nth-child(4), .tiles article:nth-child(5){
-    width: 33% !important;
+    width: 33.3% !important;
   }
+}
+
+#header{
+  box-shadow: none;
 }
 
 .videobg {
